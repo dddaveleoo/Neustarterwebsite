@@ -40,6 +40,12 @@
                 🦉
                 <span class="sidebar-text">Hedwig</span>
             </button>
+            <button class="easteregg" onclick="playEasterEgg()" aria-label="Easteregg">
+                
+                <span class="sidebar-text"></span>
+            </button>
+            <audio id="easterAudio" src="easteregg.mp3"></audio>
+
         </aside>
 
         <!-- Main Content -->
@@ -253,6 +259,19 @@
     </div>
 
     <script>
+        function playEasterEgg() {
+            const audio = document.getElementById('easterAudio');
+            if (!audio) return;
+            // neu starten, falls bereits gespielt
+            audio.currentTime = 0;
+            audio.volume = 1.0; // bei Bedarf anpassen 0.0 - 1.0
+            audio.play().catch(err => {
+                console.warn('Audio konnte nicht abgespielt werden:', err);
+            });
+        }
+
+
+
         // Navigation functions
         function showTimeline() {
             document.getElementById('timeline-section').style.display = 'block';
