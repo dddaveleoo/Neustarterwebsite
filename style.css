@@ -79,7 +79,6 @@
             background: var(--accent-tertiary);
             color: #ffffff;
             font-size: 1.5rem;
-            margin-left: -150px;
             cursor: pointer;
             display: flex;
             align-items: center;
@@ -103,6 +102,16 @@
 
         .sidebar:hover .sidebar-text {
             opacity: 1;
+        }
+
+        .sidebar .home-btn:not(:first-child) {
+        width: 36px;
+        height: 36px;
+        font-size: 1.1rem;
+        margin-left: -150;
+        margin-bottom: 1.2rem;
+        border-radius: 8px;
+        padding: 0;
         }
 
         /* Main Content */
