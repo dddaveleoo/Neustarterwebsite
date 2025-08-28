@@ -10,9 +10,31 @@
     <div class="container">
         <!-- Sidebar -->
         <aside class="sidebar">
-            <button class="home-btn" onclick="showTimeline()">
-                ⌂
-                <span class="sidebar-text"></span>
+            <button class="home-btn" onclick="showTimeline()" aria-label="Home">
+                🏠
+                <span class="sidebar-text">Home</span>
+            </button>
+
+            <button class="home-btn new-sidebar-btn" onclick="window.open('https://learninghub.tgw-group.com/')" aria-label="E-Learning">
+                ℹ️   
+                <span class="sidebar-text">E-Learning</span>
+            </button>
+        
+            <button class="home-btn new-sidebar-btn" onclick="window.open('https://alaclick.gourmet.at/frontend4/')" aria-label="Gourmet">
+                🍽️
+                <span class="sidebar-text">Gourmet</span>
+            </button>
+            <button class="home-btn new-sidebar-btn" onclick="window.open('https://launcher.myapps.microsoft.com/api/signin/4b641da6-e469-4e00-966c-686dee24231a?tenantId=409598cf-67ac-44d8-bad5-877b05415cdc')" aria-label="DPW">
+                📙
+                <span class="sidebar-text">DPW</span>
+            </button>
+            <button class="home-btn new-sidebar-btn" onclick="window.open('https://ticketsystem.tgw.local/')" aria-label="Ticketsystem">
+                🎫
+                <span class="sidebar-text">Ticketsystem</span>
+            </button>
+            <button class="home-btn new-sidebar-btn" onclick="window.open('https://intranet.tgw-group.com/content/page/64bfdd12a5c2d4768df43a1c')" aria-label="Hedwig">
+                🦉
+                <span class="sidebar-text">Hedwig</span>
             </button>
         </aside>
 
@@ -21,8 +43,8 @@
             <!-- Timeline Section -->
             <section id="timeline-section" class="timeline-section">
                 <div class="timeline-header">
-                    <h1 class="timeline-title">My Journey</h1>
-                    <p class="timeline-subtitle">Explore the milestones that shaped my career</p>
+                    <h1 class="timeline-title">Dein Weg</h1>
+                    <p class="timeline-subtitle">Hole dir einen groben Überblick, über was dich in deiner Lehrzeit erwartet</p>
                 </div>
 
                 <div class="timeline">
@@ -30,13 +52,13 @@
                     <div class="timeline-item timeline-item-left">
                         <div class="timeline-dot"></div>
                         <div class="timeline-box" onclick="showContent('project1')">
-                            <div class="timeline-date">Jan 2023</div>
-                            <h3 class="timeline-box-title">Project Phoenix Launch</h3>
+                            <div class="timeline-date">September 2025</div>
+                            <h3 class="timeline-box-title">Der Einstieg</h3>
                             <p class="timeline-box-description">
-                                Revolutionized the industry with cutting-edge solutions and innovative approaches to complex problems.
+                                Der erste Einstieg in die Arbeitswelt als Applikationsentwickler bei TGW.
                             </p>
                             <span class="timeline-box-cta">
-                                View Details →
+                                Zeig mir mehr →
                             </span>
                         </div>
                     </div>
@@ -45,13 +67,13 @@
                     <div class="timeline-item timeline-item-right">
                         <div class="timeline-dot"></div>
                         <div class="timeline-box" onclick="showContent('project2')">
-                            <div class="timeline-date">Jun 2023</div>
-                            <h3 class="timeline-box-title">AI Integration Suite</h3>
+                            <div class="timeline-date">Oktober 2025</div>
+                            <h3 class="timeline-box-title">Das erste Datenbank Projekt</h3>
                             <p class="timeline-box-description">
-                                Developed a comprehensive AI platform that transformed business operations across multiple sectors.
+                               Du entwickelst deine erste Datenbank mit SQL.
                             </p>
                             <span class="timeline-box-cta">
-                                View Details →
+                               Zeig mir mehr →
                             </span>
                         </div>
                     </div>
@@ -60,13 +82,12 @@
                     <div class="timeline-item timeline-item-left">
                         <div class="timeline-dot"></div>
                         <div class="timeline-box" onclick="showContent('project3')">
-                            <div class="timeline-date">Sep 2023</div>
-                            <h3 class="timeline-box-title">Cloud Migration</h3>
+                            <div class="timeline-date">Dezember 2025</div>
+                            <h3 class="timeline-box-title">Das erste mal C# entwickeln</h3>
                             <p class="timeline-box-description">
-                                Successfully migrated enterprise infrastructure to cloud-native architecture with zero downtime.
-                            </p>
+                                Hier entwickelst du deine erste C# Applikation. Welche nicht Objekt Orientiert sind.<br><br>
                             <span class="timeline-box-cta">
-                                View Details →
+                                 Zeig mir mehr →
                             </span>
                         </div>
                     </div>
@@ -75,13 +96,13 @@
                     <div class="timeline-item timeline-item-right">
                         <div class="timeline-dot"></div>
                         <div class="timeline-box" onclick="showContent('project4')">
-                            <div class="timeline-date">Dec 2023</div>
-                            <h3 class="timeline-box-title">Mobile First Initiative</h3>
+                            <div class="timeline-date">Jänner 2026</div>
+                            <h3 class="timeline-box-title">Die erste Berührung mit PL/SQL</h3>
                             <p class="timeline-box-description">
-                                Led the transition to mobile-first design principles, improving user engagement by 150%.
+                                Hier erlebst du deine erste Berührung mit PL/SQL.
                             </p>
                             <span class="timeline-box-cta">
-                                View Details →
+                                Zeig mir mehr →
                             </span>
                         </div>
                     </div>
@@ -90,13 +111,13 @@
                     <div class="timeline-item timeline-item-left">
                         <div class="timeline-dot"></div>
                         <div class="timeline-box" onclick="showContent('project5')">
-                            <div class="timeline-date">Feb 2024</div>
-                            <h3 class="timeline-box-title">Data Analytics Platform</h3>
+                            <div class="timeline-date">März 2026</div>
+                            <h3 class="timeline-box-title">C# Objekt Orientiert</h3>
                             <p class="timeline-box-description">
-                                Built a real-time analytics dashboard that provides actionable insights for strategic decision making.
+                                Hier baust du deine erste Objekt Orientierte C# Applikation.
                             </p>
                             <span class="timeline-box-cta">
-                                View Details →
+                                 Zeig mir mehr →
                             </span>
                         </div>
                     </div>
@@ -106,38 +127,53 @@
             <!-- Content Sections -->
             <section id="project1" class="content-section">
                 <div class="content-header">
-                    <a href="#" class="back-btn" onclick="showTimeline()">← Back to Timeline</a>
-                    <h2 class="content-title">Project Phoenix Launch</h2>
+                    <a href="#" class="back-btn" onclick="showTimeline()">← Zurück zur Übersicht</a>
+                    <h2 class="content-title">Der Einstieg</h2>
                 </div>
                 <div class="content-body">
                     <img src="pictures/TGW__DSF7926.jpg" style="width: 100%; border-radius: 12px; margin-bottom: 2rem;" />
                     <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 1.5rem;">
-                        
+
+
+                        In deinen ersten paar Wochen bei TGW lernst du viele neue Dinge kennen.
+                        Du wirst viele neue Leute kennenlernen und dich in die Firma integrieren.
+                        Du wirst die ersten Schritte in der Softwareentwicklung machen und deine ersten Projekte starten.
+                        Du wirst auch Schulungen besuchen, in welchen es um Mathematik geht. Nicht um "1+1=2" sondern um Themen wie Zahlensysteme oder die Aussagenlogik.
+                        Du wirst auch einige Kurse besuchen wie z.B.:
                     </p>
                     <ul style="color: var(--text-secondary); line-height: 1.8; padding-left: 2rem; margin-bottom: 2rem;">
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
+                        <li>Rechten & Pflichten als Lehrling</li>
+                        <li>Arbeitspsychologie</li>
+                        <li>Ergonomie</li>
+                        <li>Business Englisch</li>
+                        <li>und vieles mehr....</li>
+
                     </ul>
                 </div>
             </section>
 
             <section id="project2" class="content-section">
                 <div class="content-header">
-                    <a href="#" class="back-btn" onclick="showTimeline()">← Back to Timeline</a>
-                    <h2 class="content-title">AI Integration Suite</h2>
+                    <a href="#" class="back-btn" onclick="showTimeline()">← Zurück zur Übersicht</a>
+                    <h2 class="content-title">Die erste Datenbank</h2>
                 </div>
                 <div class="content-body">
                     <img src="pictures/database-149760_1280.webp" alt="Datenbank wird bildlich dargestellt" style="width: 100%; border-radius: 12px; margin-bottom: 2rem;" />
                     <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 1.5rem;">
-                        
+
+                        Programmieren besteht nicht nur aus C#, Java oder den anderen Sprachen. 
+                        Datenbanken sind die Basis eines jeden Systems. Wir müssen schließlich die Daten der Nutzer, Produkte, Bestellungen, etc. speichern.
+                        Hierzu verwenden wir in der TGW SQL auf einer Oracle Datenbank.
+                        In diesem Projekt wirst du deine erste Datenbank mit SQL erstellen und verwalten.
+                        Du wirst z.B. folgende Aufgaben abarbeiten:
                     </p>
                     <ul style="color: var(--text-secondary); line-height: 1.8; padding-left: 2rem; margin-bottom: 2rem;">
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
+                        <li>Grundlegene Informationen</li>
+                        <li>ER-Modelle</li>
+                        <li>Tabellen erstellen / Daten einfügen </li>
+                        <li>DML / DDL</li>
+                        <li>Sequences, View und Schemaobjekte</li>
+
                     </ul>
                 </div>
             </section>

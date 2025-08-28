@@ -11,6 +11,7 @@
             --text-primary: #ffffff;
             --text-secondary: #b3b3b3;
             --accent-primary: #e53415;
+            --accent-secondary: #c6281a;
             --accent-tertiary: #f6c209;
             --border-color: #404040;
             --shadow-color: rgba(0, 0, 0, 0.3);
@@ -45,7 +46,7 @@
         }
 
         .sidebar:hover {
-            width: 240px;
+            width: 260px;
         }
 
         .home-btn {
@@ -55,6 +56,7 @@
             border: none;
             border-radius: 12px;
             color: white;
+            margin-left: -150px;
             font-size: 1.5rem;
             cursor: pointer;
             display: flex;
@@ -65,6 +67,27 @@
         }
 
         .home-btn:hover {
+            background: var(--accent-secondary);
+            transform: scale(1.05);
+        }
+        .sidebar .home-btn {
+            position: relative;
+        }
+        
+        .new-sidebar-btn {
+            background: var(--accent-primary) !important;
+            background: var(--accent-tertiary);
+            color: #ffffff;
+            font-size: 1.5rem;
+            margin-left: -150px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            margin-bottom: 2rem;
+        }
+        .new-sidebar-btn:hover {
             background: var(--accent-secondary);
             transform: scale(1.05);
         }
