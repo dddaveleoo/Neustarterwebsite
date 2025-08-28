@@ -135,12 +135,15 @@
         }
 
         .timeline-title {
-            font-size: 3rem;
-            font-weight: 700;
-            background: linear-gradient(135deg, var(--accent-primary), var(--accent-tertiary));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            margin-bottom: 0.5rem;
+        font-family: 'Trebuchet MS', sans-serif !important;
+        font-size: 3rem;
+        font-weight: 700;
+        background: linear-gradient(135deg, var(--accent-primary), var(--accent-tertiary));
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-bottom: 0.5rem;
+        letter-spacing: 2px;
         }
 
         .timeline-subtitle {
@@ -288,6 +291,7 @@
             margin-bottom: 1rem;
             background: linear-gradient(135deg, var(--accent-primary), var(--accent-tertiary));
             -webkit-background-clip: text;
+            background-clip: text;
             -webkit-text-fill-color: transparent;
         }
 
@@ -326,51 +330,39 @@
 
         /* Responsive Design */
         @media (max-width: 768px) {
-            .timeline::before {
-                left: 30px;
-            }
+    .timeline::before {
+        font-size: 4rem;
+    }
+    .timeline-item {
+        width: 85%;
+        left: 15% !important;
+    }
+    .timeline-item-left .timeline-dot,
+    .timeline-item-right .timeline-dot {
+        left: -42px;
+        right: auto;
+    }
+    /* REMOVE .timeline-title block here */
+    .content-title {
+        font-size: 2rem;
+    }
+    .content-body {
+        padding: 2rem;
+    }
+}
+  
+.content-title {
+    font-size: 2rem;
+}
 
-            .timeline-item {
-                width: 85%;
-                left: 15% !important;
-            }
-
-            .timeline-item-left .timeline-dot,
-            .timeline-item-right .timeline-dot {
-                left: -42px;
-                right: auto;
-            }
-
-            .timeline-title {
-                font-size: 2.5rem;
-            }
-
-            .content-title {
-                font-size: 2rem;
-            }
-
-            .content-body {
-                padding: 2rem;
-            }
-        }
+.content-body {
+    padding: 2rem;
+}
 
         @media (max-width: 480px) {
-            .sidebar {
-                width: 60px;
-                padding: 1rem 0.5rem;
-            }
+    /* Remove .timeline-title font-family here! */
+    .timeline-title {
+        font-size: 2rem;
+    }
 
-            .main-content {
-                margin-left: 60px;
-                padding: 1rem;
-            }
-
-            .timeline-item {
-                width: 90%;
-                left: 10% !important;
-            }
-
-            .timeline-title {
-                font-size: 2rem;
-            }
-        }
+}
