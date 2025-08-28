@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timeline Portfolio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <button class="home-btn" onclick="showTimeline()">
+                ⌂
+                <span class="sidebar-text"></span>
+            </button>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Timeline Section -->
+            <section id="timeline-section" class="timeline-section">
+                <div class="timeline-header">
+                    <h1 class="timeline-title">My Journey</h1>
+                    <p class="timeline-subtitle">Explore the milestones that shaped my career</p>
+                </div>
+
+                <div class="timeline">
+                    <!-- Timeline Item 1 -->
+                    <div class="timeline-item timeline-item-left">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-box" onclick="showContent('project1')">
+                            <div class="timeline-date">Jan 2023</div>
+                            <h3 class="timeline-box-title">Project Phoenix Launch</h3>
+                            <p class="timeline-box-description">
+                                Revolutionized the industry with cutting-edge solutions and innovative approaches to complex problems.
+                            </p>
+                            <span class="timeline-box-cta">
+                                View Details →
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 2 -->
+                    <div class="timeline-item timeline-item-right">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-box" onclick="showContent('project2')">
+                            <div class="timeline-date">Jun 2023</div>
+                            <h3 class="timeline-box-title">AI Integration Suite</h3>
+                            <p class="timeline-box-description">
+                                Developed a comprehensive AI platform that transformed business operations across multiple sectors.
+                            </p>
+                            <span class="timeline-box-cta">
+                                View Details →
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 3 -->
+                    <div class="timeline-item timeline-item-left">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-box" onclick="showContent('project3')">
+                            <div class="timeline-date">Sep 2023</div>
+                            <h3 class="timeline-box-title">Cloud Migration</h3>
+                            <p class="timeline-box-description">
+                                Successfully migrated enterprise infrastructure to cloud-native architecture with zero downtime.
+                            </p>
+                            <span class="timeline-box-cta">
+                                View Details →
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 4 -->
+                    <div class="timeline-item timeline-item-right">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-box" onclick="showContent('project4')">
+                            <div class="timeline-date">Dec 2023</div>
+                            <h3 class="timeline-box-title">Mobile First Initiative</h3>
+                            <p class="timeline-box-description">
+                                Led the transition to mobile-first design principles, improving user engagement by 150%.
+                            </p>
+                            <span class="timeline-box-cta">
+                                View Details →
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 5 -->
+                    <div class="timeline-item timeline-item-left">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-box" onclick="showContent('project5')">
+                            <div class="timeline-date">Feb 2024</div>
+                            <h3 class="timeline-box-title">Data Analytics Platform</h3>
+                            <p class="timeline-box-description">
+                                Built a real-time analytics dashboard that provides actionable insights for strategic decision making.
+                            </p>
+                            <span class="timeline-box-cta">
+                                View Details →
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Content Sections -->
+            <section id="project1" class="content-section">
+                <div class="content-header">
+                    <a href="#" class="back-btn" onclick="showTimeline()">← Back to Timeline</a>
+                    <h2 class="content-title">Project Phoenix Launch</h2>
+                </div>
+                <div class="content-body">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/0e86ac43-ccf0-4794-beb3-a20e51ee11a1.png" alt="Modern tech startup office with developers working on cutting-edge project with multiple monitors and collaborative whiteboards" style="width: 100%; border-radius: 12px; margin-bottom: 2rem;" />
+                    <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 1.5rem;">
+                        Project Phoenix represented a paradigm shift in how we approach software development. 
+                        This ambitious initiative combined agile methodologies with cutting-edge technologies 
+                        to deliver unprecedented results.
+                    </p>
+                    <ul style="color: var(--text-secondary); line-height: 1.8; padding-left: 2rem; margin-bottom: 2rem;">
+                        <li>Reduced development time by 40%</li>
+                        <li>Improved system performance by 300%</li>
+                        <li>Enhanced team collaboration and workflow efficiency</li>
+                        <li>Implemented automated testing and deployment pipelines</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="project2" class="content-section">
+                <div class="content-header">
+                    <a href="#" class="back-btn" onclick="showTimeline()">← Back to Timeline</a>
+                    <h2 class="content-title">AI Integration Suite</h2>
+                </div>
+                <div class="content-body">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/9b4b5568-50a2-4ee4-b235-294372bc0cb7.png" alt="Artificial intelligence dashboard showing neural network visualizations and data analytics with glowing connections and nodes" style="width: 100%; border-radius: 12px; margin-bottom: 2rem;" />
+                    <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 1.5rem;">
+                        Our AI Integration Suite transformed how businesses leverage artificial intelligence. 
+                        The platform provides seamless integration of machine learning models into existing 
+                        workflows with minimal disruption.
+                    </p>
+                    <ul style="color: var(--text-secondary); line-height: 1.8; padding-left: 2rem; margin-bottom: 2rem;">
+                        <li>Real-time data processing and analysis</li>
+                        <li>Customizable machine learning pipelines</li>
+                        <li>Scalable architecture supporting millions of requests</li>
+                        <li>Comprehensive API documentation and developer tools</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="project3" class="content-section">
+                <div class="content-header">
+                    <a href="#" class="back-btn" onclick="showTimeline()">← Back to Timeline</a>
+                    <h2 class="content-title">Cloud Migration</h2>
+                </div>
+                <div class="content-body">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/2b3069c0-520a-4d16-845e-cd1be1e2e8e3.png" alt="Cloud computing infrastructure visualization with servers, data centers, and network connections in a modern digital environment" style="width: 100%; border-radius: 12px; margin-bottom: 2rem;" />
+                    <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 1.5rem;">
+                        The cloud migration project was a massive undertaking that involved moving 
+                        critical infrastructure from on-premises data centers to a cloud-native 
+                        architecture without any service disruption.
+                    </p>
+                    <ul style="color: var(--text-secondary); line-height: 1.8; padding-left: 2rem; margin-bottom: 2rem;">
+                        <li>Zero downtime during migration</li>
+                        <li>60% reduction in infrastructure costs</li>
+                        <li>Improved scalability and reliability</li>
+                        <li>Enhanced security and compliance measures</li>
+                        <li>Automated disaster recovery solutions</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="project4" class="content-section">
+                <div class="content-header">
+                    <a href="#" class="back-btn" onclick="showTimeline()">← Back to Timeline</a>
+                    <h2 class="content-title">Mobile First Initiative</h2>
+                </div>
+                <div class="content-body">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/9fd3d9f2-39c7-43b8-8a7a-1f1011a26093.png" alt="Modern mobile app interface designs displayed on various smartphone screens showing responsive layout and user-friendly design" style="width: 100%; border-radius: 12px; margin-bottom: 2rem;" />
+                    <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 1.5rem;">
+                        The Mobile First Initiative completely transformed our approach to user experience. 
+                        By prioritizing mobile responsiveness, we achieved unprecedented engagement metrics 
+                        and user satisfaction scores.
+                    </p>
+                    <ul style="color: var(--text-secondary); line-height: 1.8; padding-left: 2rem; margin-bottom: 2rem;">
+                        <li>150% increase in mobile user engagement</li>
+                        <li>40% faster page load times on mobile</li>
+                        <li>Consistent user experience across all devices</li>
+                        <li>Progressive Web App capabilities implemented</li>
+                        <li>Enhanced accessibility features</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="project5" class="content-section">
+                <div class="content-header">
+                    <a href="#" class="back-btn" onclick="showTimeline()">← Back to Timeline</a>
+                    <h2 class="content-title">Data Analytics Platform</h2>
+                </div>
+                <div class="content-body">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/50293a2b-a4bc-4479-b3f8-e1ee3628bce4.png" alt="Interactive data visualization dashboard with charts, graphs, and metrics showing real-time business intelligence analytics" style="width: 100%; border-radius: 12px; margin-bottom: 2rem;" />
+                    <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 1.5rem;">
+                        Our Data Analytics Platform provides real-time insights that drive strategic 
+                        decision-making across the organization. The platform processes millions of 
+                        data points daily to deliver actionable intelligence.
+                    </p>
+                    <ul style="color: var(--text-secondary); line-height: 1.8; padding-left: 2rem; margin-bottom: 2rem;">
+                        <li>Real-time data processing and visualization</li>
+                        <li>Predictive analytics and machine learning integration</li>
+                        <li>Customizable dashboards and reporting tools</li>
+                        <li>Data governance and security compliance</li>
+                        <li>API integration with existing business systems</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        // Navigation functions
+        function showTimeline() {
+            document.getElementById('timeline-section').style.display = 'block';
+            document.querySelectorAll('.content-section').forEach(section => {
+                section.classList.remove('active');
+            });
+        }
+
+        function showContent(sectionId) {
+            document.getElementById('timeline-section').style.display = 'none';
+            document.querySelectorAll('.content-section').forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById(sectionId).classList.add('active');
+        }
+
+        // Intersection Observer for timeline animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all timeline items
+        document.querySelectorAll('.timeline-item').forEach(item => {
+            observer.observe(item);
+        });
+
+        // Initial animation trigger
+        document.addEventListener('DOMContentLoaded', () => {
+            const timelineItems = document.querySelectorAll('.timeline-item');
+            timelineItems.forEach((item, index) => {
+                item.style.transitionDelay = `${index * 0.2}s`;
+            });
+        });
+    </script>
+</body>
+</html>
+
